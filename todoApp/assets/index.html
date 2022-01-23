@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo API Test</title>
+</head>
+<body>
+    <div style="max-width:700px; margin: auto;">
+
+        <h1>Todo API Test Page</h1>
+        <div id="getAll">
+            <h3>Get All Todos</h3>
+            <button id="getAllBtn">GET</button> <span>/todos</span>
+            <br>
+            <textarea name="result" id="allResult" cols="100" rows="10"></textarea>
+        </div>
+        <div id="getOne">
+            <h3>Get One Todos</h3>
+            <button id="getOneBtn">GET</button> <span>/todos/<input required placeholder=":todoId" id="todo-id" name="todo-id" type="text" /></span>
+            <br>
+            <textarea name="result" id="oneResult" cols="100" rows="10"></textarea>
+        </div>
+        <div id="createOne">
+            <h3>Create Todo</h3>
+            <button id="createBtn">POST</button> <span>/todos</span>
+            <div class="form-input">
+                <br>
+                <label for="content">Enter Todo Content:</label>
+                <input required type="text" name="content" id="content">
+            </div>
+            <br>
+            <textarea name="result" id="createResult" cols="100" rows="10"></textarea>
+
+        </div>
+        <div id="updateOne">
+            <h3>Update Todo</h3>
+            <button id="updateBtn">PUT</button> <span>/todos/</span><input type="text" placeholder=":todoId" required id="todo-id-update" name="todo-id-update">
+            <div class="form-input">
+                <br>
+                <label for="content">Enter New Todo Content:</label>
+                <input type="text" name="content-update" id="content-update">
+            </div>
+            <br>
+            <textarea name="result" id="updateResult" cols="100" rows="10"></textarea>
+
+        </div>
+        <div id="deleteOne">
+            <h3>Delete Todo</h3>
+            <button id="deleteOneBtn">DELETE</button> <span>/todos/<input required placeholder=":todoId" id="todo-id-del" name="todo-id" type="text" /></span>
+            <br>
+            <textarea name="result" id="deleteResult" cols="100" rows="10"></textarea>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/testApi.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+.vscode/
+node_modules
+package-lock.json
+hello.txt
+person.json
+.env
+test/
