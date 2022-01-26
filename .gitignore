@@ -5,3 +5,4 @@ hello.txt
 person.json
 .env
 test/
+db.json

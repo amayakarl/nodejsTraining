@@ -100,13 +100,13 @@ document.getElementById('updateBtn').addEventListener('click', function(e){
     axios.put('/todos/'+todoId.value, {
         content: content.value
     })
-        .then(response=>response.data)
-        .then(data=>{
+    .then(response=>response.data)
+    .then(data=>{
 
-            document.getElementById('updateResult').value = JSON.stringify(data, null, 4)
-        })
-        .catch(err=>{
-            document.getElementById('updateResult').value = err.message
-            console.log(err)
-        })
+        document.getElementById('updateResult').value = JSON.stringify(data, null, 4)
+    })
+    .catch(err=>{
+        document.getElementById('updateResult').value = err.message
+        console.log(err)
+    })
 })
