@@ -8,7 +8,7 @@ function add(num1, num2){
     return num1 + num2
 }
 // exporting a javascript object with two functions
-module.exports = {
+/*module.exports = {
     square, 
     add
-}
+}*/

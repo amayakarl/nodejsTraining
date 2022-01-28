@@ -28,5 +28,6 @@ function getNewFact(){
         .catch(function(error){
             console.log(error.message)
         })
+    console.log("I am tired of waiting, i will run first.")
 }
 getNewFact()
